@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: pradeepetl/snowparkdev
+          repository: Nvinay-2003/snowparkdev
           #path: dev
           ref: dev
           
