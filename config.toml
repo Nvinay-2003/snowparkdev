@@ -1,4 +1,4 @@
-default_connection_name = "myconnection" 
+default_connection_name = "trail" 
   
 [connections] 
 [connections.myconnection]
