@@ -50,11 +50,11 @@ jobs:
           default-config-file-path: "config.toml"
 
       - name: copy sql file
-        working-directory: DE_PROJECT_1/app
+        working-directory: de_project_1/app
         run: snow stage copy load_to_emp_tgt.sql @dev_deployment/de_project_1/
       
       - name: Deploy Snowpark apps
-        working-directory: DE_PROJECT_1
+        working-directory: de_project_!
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT_DEV }}
           SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER_DEV }}
