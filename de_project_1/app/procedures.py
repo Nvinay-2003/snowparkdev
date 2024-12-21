@@ -20,7 +20,7 @@ def copy_to_table_proc(session : Session) -> str:
     copied_into_result,qid = copy_to_table(session,configs.employee_config,schemas.emp_stg_schema)
     
 def execute_sql_statements(session : Session) -> None:
-    session.sql("execute immediate from @dev_deployment/de_project_1/load_to_emp_tgt.sql")
+    session.sql("execute immediate from @dev_deployment/de_project_1/app/load_to_emp_tgt.sql")
 
 # For local debugging
 # Beware you may need to type-convert arguments if you add input parameters
